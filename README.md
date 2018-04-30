@@ -1,6 +1,6 @@
 # omfwotvs
 
-This simple Vue JS page loads multiple YouTube videos into a single page. THe videos are stacked and each one is covered with a vintage TV frame to create a wall of TVs.
+This simple Vue JS page loads multiple YouTube videos into a single page. The videos are stacked and each one is covered with a vintage TV frame to create a wall of TVs.
 
 ## Build Setup
 
