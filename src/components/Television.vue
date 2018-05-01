@@ -105,30 +105,31 @@ export default {
 .controls .play-pause {
     position: absolute;
     top: 0;
-    right: 4em;
+    /* right: 4em; */
+    right: 17%;
     bottom: 0;
     left: 0;
 }
-.controls .next,
-.controls .previous {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 20em;
-}
 .controls .next {
     position: absolute;
-    top: 6.4em;
+    /* top: 6.4em;
     right: 0;
     bottom: 4em;
-    left: 20em;
+    left: 20em; */
+    top: 68%;
+    right: 0;
+    bottom: 14%;
+    left: 83%;
 }
 .controls .previous {
     position: absolute;
-    top: 8.6em;
+    /* top: 8.6em;
     right: 0;
     bottom: 1.5em;
-    left: 20em;
+    left: 20em; */
+    top: 49%;
+    right: 0;
+    bottom: 32%;
+    left: 83%;
 }
 </style>

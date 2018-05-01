@@ -2,7 +2,7 @@
     <div id="app">
         <b-container>
             <b-row>
-                <template v-for="(videoId, index) in videoList">
+                <template v-for="(videoId, index) in videoList" v-if="index < 8">
                     <tv :videoId="videoId" :videoList="videoList" @event="handler"></tv>
                     <div v-if="(index + 1) % 3 == 0" class="w-100"></div>
                 </template>
@@ -26,14 +26,15 @@ export default {
                 'c8W-auqg024',    // Garlic bread to the edge of space
                 'KhaLiiSUvAw',    // Ferrari Enzo Tour
                 '1U-cgn3cEGA',    // Best of Rodney Mullen
-                // '_bkX5VkZg8U',    // Ken Block Gymkhana 9
-                // 'W4afbDBWINU',    // Gold Robot Dancers
-                // '05hTBAOnDQE',    // Cyanide & Happiness: Le Telepathe
-                // 'ayf1sYiNLhQ',    // TV Test Pattern
-                // 'ZApMxLmpIhQ',    // Habibi Lal Belly Dance
-                // 'W4YcRYzeakA',    // Moving a bed with a bike
-                // 'fNp5JZ2vA8o',    // 11 Year Old Dubstep Dance
-                // 'IvUU8joBb1Q'    // Wintergatan Marble Music Machine
+                '_bkX5VkZg8U',    // Ken Block Gymkhana 9
+                'W4afbDBWINU',    // Gold Robot Dancers
+                '05hTBAOnDQE',    // Cyanide & Happiness: Le Telepathe
+                'spYwizUnxCI',    // TV Test Pattern
+                'ZApMxLmpIhQ',    // Habibi Lal Belly Dance
+                'W4YcRYzeakA',    // Moving a bed with a bike
+                'fNp5JZ2vA8o',    // 11 Year Old Dubstep Dance
+                'IvUU8joBb1Q',    // Wintergatan Marble Music Machine
+                'oVnuFY20st0'     // The scientific method
             ]
             var tvCount = (vList.length > 8 ? 8 : vList.length)
             var defaultVideo = 'spYwizUnxCI'   // TV Test Pattern
