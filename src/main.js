@@ -38,16 +38,11 @@ Vue.directive('autoheight', {
 
         Vue.nextTick(function () { // Wait for DOM
             el.style.height = Math.round((9/16) * el.offsetWidth) + 'px'
-            console.log(el.offsetWidth);
             if(typeof s(binding.value) !== 'undefined') {
                 var w = Math.round(el.offsetWidth * (s(binding.value)/100));
                 var h = Math.round(el.offsetHeight * (s(binding.value)/100));
                 el.style.width = w + 'px';
                 el.style.height = h + 'px';
-
-                /* The .player class in the Television.vue component should
-                handle this but it isn't. So we'll just do it this way. */
-                if(el.className == 'player') el.style.margin = '1em';
             }
 
         })
